@@ -3,3 +3,7 @@
 .font-lato {
     font-family: 'Lato', sans-serif;
 }
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
