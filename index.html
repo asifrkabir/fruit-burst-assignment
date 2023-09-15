@@ -1,11 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              'primary-red': "#F85559"
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
     <title>Fruit Burst</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="font-lato">
+    <header>
+      <nav class="container mx-auto mt-4">
+        <div class="navbar bg-white md:bg-primary-red rounded-full px-4 py-5">
+          <div class="navbar-start">
+            <ul class="menu menu-horizontal px-1 hidden lg:flex text-white">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <a class="lg:hidden flex items-center gap-2">
+              <img src="images/logo.png" alt="" />
+              <p class="md:text-white text-2xl font-extrabold">Fruit Burst</p>
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <a class="lg:ms-auto flex items-center gap-2">
+              <img src="images/logo.png" alt="" />
+              <p class="text-white text-2xl font-extrabold">Fruit Burst</p>
+            </a>
+          </div>
+          <div class="navbar-end hidden lg:flex">
+            <div class="form-control relative lg:block md:hidden sm:hidden">
+              <input
+                type="text"
+                placeholder="Search here"
+                class="input w-96 rounded-full" />
+              <i
+                class="absolute text-gray-500 top-4 right-5 fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
